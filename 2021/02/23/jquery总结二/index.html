@@ -1,0 +1,555 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  <title>王佳伟</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"w18747.github.io","root":"/","version":"1.8.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>王佳伟的博客</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-02-23 21:37" pubdate>
+        2021年2月23日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      24
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none"></h1>
+            
+            <div class="markdown-body">
+              <h3 id="构造函数创建对象"><a href="#构造函数创建对象" class="headerlink" title="构造函数创建对象:"></a><strong>构造函数创建对象</strong>:</h3><p>1.构造函数创建对象:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">People</span>(<span class="hljs-params">name,age,height</span>)</span>&#123;<br>    <span class="hljs-built_in">this</span>.name=name<br>    <span class="hljs-built_in">this</span>.age=age<br>    <span class="hljs-built_in">this</span>.height=height<br>    <span class="hljs-built_in">this</span>.say=<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>&#123;<br><span class="hljs-built_in">console</span>.log(<span class="hljs-string">&#x27;hello&#x27;</span>)<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>2.字面量创建对象:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> obj = &#123;<br>    name:<span class="hljs-string">&#x27;小明&#x27;</span>,<br>    age:<span class="hljs-number">12</span><br>&#125;<br></code></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>new Object创建对象</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> obj2 = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Object</span>()<br>       obj2.name = <span class="hljs-string">&#x27;小明&#x27;</span><br>       obj2[<span class="hljs-string">&#x27;age&#x27;</span>] = <span class="hljs-number">12</span><br>       <span class="hljs-built_in">console</span>.log(obj2)<br></code></pre></td></tr></table></figure>
+
+
+
+<p><strong>静态成员和实例成员</strong>:</p>
+<p><strong>实例成员</strong>:把在this上添加的属性和方法叫做静态成员,只能通过构造函数本身才能访问, 只能通过实例对象才能访问的属性或方法</p>
+<p><strong>静态成员</strong>:给构造函数添加的属性和方法叫做静态成员, 只能通过构造函数本身才能访问的属性或方法</p>
+<h1 id="构造函数的原型对象-prototype"><a href="#构造函数的原型对象-prototype" class="headerlink" title="构造函数的原型对象(prototype)"></a>构造函数的原型对象(prototype)</h1><p><strong>一</strong>.  构造函数中直接添加方法的缺点:</p>
+<p>每次创建对象,需要重复开辟内存空间,浪费空间</p>
+<p><strong>二</strong>.构造函数的原型对象prototype:</p>
+<p>1.<strong>每个函数</strong>都有<strong>prototype属性</strong>,它是一个<strong>对象</strong></p>
+<p>2.在 prototype 对象上的<strong>方法</strong>和<strong>属性</strong>, 会<strong>被 new 构造函数()</strong> <strong>创建出来</strong>的<strong>实例对象所继承</strong></p>
+<p><strong>三</strong>.</p>
+<p> (1) 只要是函数就默认有 prototype 属性, 但<strong>非函数</strong>的<strong>对象是不具有</strong>的</p>
+<p>  (2) 定义构造函数时, <strong>公共的方法定义在原型对象上</strong>, 这样可以被<strong>所有创建出来的实例直接继承</strong></p>
+<h1 id="构造函数的对象原型-proto"><a href="#构造函数的对象原型-proto" class="headerlink" title="构造函数的对象原型(--proto--)"></a>构造函数的对象原型(<code>--proto--</code>)</h1><p><strong>一</strong>、对象的原型</p>
+<p>​    <strong>每个对象</strong>都默认有一个 -<code>-proto</code>–的属性, 它的<strong>值是一个对象</strong>, 默认<strong>指向创建这个对象</strong>的<strong>构造函数的原型</strong>(创建这个对象的构造函数的prototype)</p>
+<p> <strong>二</strong>、对象原型的访问特点</p>
+<p>​     每个对象访问 –<code>proto</code>– 下的所有属性和方法，可以省略–<code>proto</code>–</p>
+<p>  <strong>三</strong>、对象上读取属性的顺序</p>
+<p>​      先从自身的属性上进行查找，如果没有再去 –<code>proto</code>– 属性指向的对象上去查找(就近原则)</p>
+<h1 id="constructor构造函数"><a href="#constructor构造函数" class="headerlink" title="constructor构造函数"></a><strong>constructor构造函数</strong></h1><p><strong>一</strong>.<strong>每个构造函数</strong>的<strong>原型</strong>上(prototype),默认<strong>都有一个constructor属性</strong>,它<strong>指向构造函数本身</strong></p>
+<p><strong>二</strong>.当我们<strong>重新建立</strong>一个对象去<strong>覆盖原先</strong>的prototype时,constructor属性需要我们<strong>手动添加</strong></p>
+<p>例如:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Student</span>(<span class="hljs-params">name, age</span>) </span>&#123;<br>            <span class="hljs-built_in">this</span>.name = name<br>            <span class="hljs-built_in">this</span>.age = age<br>            <span class="hljs-built_in">this</span>.say = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;<br>                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&#x27;你好&#x27;</span>);<br>            &#125;<br>        &#125; <br>Student.prototype = &#123;<br>            <span class="hljs-title">constructor</span>: <span class="hljs-title">Student</span>,//&lt;==别忘添加<br>            <span class="hljs-title">say</span>: <span class="hljs-title">function</span>(<span class="hljs-params"></span>) &#123;<br>                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&#x27;hello&#x27;</span>);<br>            &#125;,<br>            sleep: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;<br>                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&#x27;sleep&#x27;</span>);<br>            &#125;<br>        &#125;<br></code></pre></td></tr></table></figure>
+
+<h1 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h1><p>原型链理解（面试常问）</p>
+<p>  每个实例对象（ object ）都有一个私有属性（称之为 –<code>proto</code>–）指向创建它的构造函数的原型对象（prototype ）。</p>
+<p>  该原型对象也有一个自己的原型对象( –<code>proto</code>– ) ，层层向上直到一个对象的原型对象为 null。</p>
+<p>注意: 根据定义，null 没有原型，并作为这个原型链中的最后一个环节</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Father</span>(<span class="hljs-params">name,age</span>)</span>&#123;<br>    <span class="hljs-built_in">this</span>.name=name<br>    <span class="hljs-built_in">this</span>.age=age<br>&#125;<br>Father.prototype=&#123;<br>    <span class="hljs-title">constructor</span>:<span class="hljs-title">Father</span><br>    <span class="hljs-title">say</span> :<span class="hljs-title">function</span>(<span class="hljs-params"></span>)&#123;<br>        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&#x27;hello&#x27;</span>)<br>    &#125;<br>&#125;<br><span class="hljs-keyword">var</span> ace =<span class="hljs-keyword">new</span> Father(<span class="hljs-string">&#x27;小明&#x27;</span><span class="hljs-number">12</span>)<br><span class="hljs-comment">//ace.--proto--==&gt;Father.prototype==&gt;</span><br><span class="hljs-comment">//Father.prototype.__proto__==&gt;Object.prototype==&gt;</span><br><span class="hljs-comment">//Object.prototype.__proto__==&gt;null</span><br></code></pre></td></tr></table></figure>
+
+<p> <strong>对象访问属性时遵从原型链的顺序</strong></p>
+<p>​    (1) 当访问一个对象的属性时，首先从这个对象自身进行查找(先自身再往上)</p>
+<p>​    (2) 如果没有找到就从它的原型对象（–<code>proto</code>–）中查找</p>
+<p>​    (3) 如果还没有找到，继续沿着对象的原型链层层向上查找，直到最末尾的 null,都没有就undefined</p>
+<p><img src="C:\Users\1874750235\Desktop\笔记和作业截图\课堂笔记\原型链.png" srcset="/img/loading.gif"></p>
+<h1 id="原型对象中this的指向"><a href="#原型对象中this的指向" class="headerlink" title="原型对象中this的指向"></a>原型对象中this的指向</h1><p>1.函数中this默认指向函数的调用者</p>
+<p>2.构造函数里的this指向实例对象</p>
+<p>3.全局作用域下指向window</p>
+<h1 id="class总结-对象原型-原型对象-construtor"><a href="#class总结-对象原型-原型对象-construtor" class="headerlink" title="class总结(对象原型,原型对象,construtor)"></a>class总结(对象原型,原型对象,<code>construtor</code>)</h1><p>es6 之前构造函数的特点:</p>
+<ol>
+<li><p>构造函数默认有一个 prototype 属性, 它的值是一个对象</p>
+</li>
+<li><p>构造函数 prototype 属性下有 constructor 和 –<code>proto</code>–两个默认的属性</p>
+</li>
+<li><p>构造函数可以通过在 prototype 上添加方法, 去实现所有实例继承</p>
+</li>
+<li><p>构造函数创建的实例上 –<code>proto</code>–指向创建它构造函数的 prototype</p>
+</li>
+</ol>
+<h1 id="修改this指向的方法"><a href="#修改this指向的方法" class="headerlink" title="修改this指向的方法"></a>修改this指向的方法</h1><h3 id="call方法"><a href="#call方法" class="headerlink" title="call方法:"></a><strong>call方法</strong>:</h3><ol>
+<li><p>call 和 apply 方法可以<strong>修改函数调用时 this 的指向</strong>（面试常问 !!!）</p>
+</li>
+<li><p>call 方法可以去调用函数，并修改函数中 this 指向</p>
+<p>格式： fn . call ([对象, 参数])</p>
+</li>
+</ol>
+<p>注意: call 方法的<strong>第一个参数</strong>就是用来<strong>改变函数调用时的 this 指向</strong>, <strong>后面的参数</strong>才是正常调用函数<strong>传递的实参</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fn</span>(<span class="hljs-params">a, b, c</span>) </span>&#123;<br>            <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">this</span>);<br>            <span class="hljs-built_in">console</span>.log(a + b + c);<br>        &#125;<br>fn()<span class="hljs-comment">//&lt;==这里this指向window</span><br>fn.call([<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>],<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>)<span class="hljs-comment">//&lt;==此时this指向数组[1,2,3]</span><br></code></pre></td></tr></table></figure>
+
+<h1 id="ES-5数组新增方法"><a href="#ES-5数组新增方法" class="headerlink" title="ES 5数组新增方法"></a>ES 5数组新增方法</h1><p>一.</p>
+<p>   <strong>forEach()</strong> 方法可以快速地遍历数组</p>
+<p>   参数：callback(元素, 索引, 数组本身)</p>
+<p>   返回值：无</p>
+<p>   注意:forEach() 方法不会终止整个遍历(不管如何都会完整地遍历数组)</p>
+<p>   例子: 使用 forEach 对数组求和</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> arr = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>];<br>      arr.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">itme, index, arr</span>) </span>&#123;<br>          <span class="hljs-built_in">console</span>.log(itme)<br>          <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&#x27;索引号:&#x27;</span> + index)<br>      &#125;)<br></code></pre></td></tr></table></figure>
+
+<p>二.</p>
+<p><strong>filter()</strong> 方法从数组筛选出符合条件的一组元素</p>
+<p>参数：callback(元素, 索引, 数组本身)</p>
+<p>返回值：新数组</p>
+<p>注意:filter() 方法也不会终止整个遍历, 用来筛选符合条件的所有元素</p>
+<p>例子: 使用 filter 筛选数组中所有偶数</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> arr2 = [<span class="hljs-number">2</span>, <span class="hljs-number">4</span>, <span class="hljs-number">6</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>]<br>       <span class="hljs-keyword">var</span> newArr = arr2.filter(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">itme</span>) </span>&#123;<br>           <span class="hljs-keyword">return</span> itme % <span class="hljs-number">2</span> == <span class="hljs-number">0</span><br>       &#125;)<br>       <span class="hljs-built_in">console</span>.log(newArr);<br></code></pre></td></tr></table></figure>
+
+<p>三</p>
+<p><strong>some()</strong> 方法用于查找数组中<strong>是否有符合条件的某一个元素</strong></p>
+<p><strong>参数</strong>：callback(元素, 索引, 数组本身)</p>
+<p><strong>返回值</strong>：true(找到) || false(找不到)</p>
+<p><strong>注意</strong>:some() 方法判断数组中是否有唯一符合条件的元素, 遇到 return true 会终止整个遍历</p>
+<p>举例: 使用 some 方法判断一组字符数组中是否有空字符串</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> arr2 = [<span class="hljs-string">&#x27;hello&#x27;</span>, <span class="hljs-string">&#x27;12&#x27;</span>, <span class="hljs-string">&#x27; &#x27;</span>, <span class="hljs-string">&#x27;true&#x27;</span>, <span class="hljs-string">&#x27;&#x27;</span>]<br>       <span class="hljs-keyword">var</span> res2 = arr2.some(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">itme</span>) </span>&#123;<br>           <span class="hljs-keyword">return</span> itme == <span class="hljs-string">&#x27;&#x27;</span><br>       &#125;)<br>       <span class="hljs-built_in">console</span>.log(res2);<br></code></pre></td></tr></table></figure>
+
+<p>四.</p>
+<p><strong>every()</strong> 方法用于查找数组中是否所有的元素都符合条件</p>
+<p>参数：callback(元素, 索引, 数组本身)</p>
+<p>返回值：true || false (只有有一个不满足就返回 false)</p>
+<p>注意:every() 方法用于判断数组中是否所有的元素都符合条件, return false 会终止整个遍历过程</p>
+<p>举例: 使用 every 方法判断数组中是否所有数字都大于 20</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> arr3 = [<span class="hljs-number">30</span>, <span class="hljs-number">22</span>, <span class="hljs-number">45</span>, <span class="hljs-number">16</span>, <span class="hljs-number">20</span>]<br>        <span class="hljs-keyword">var</span> res3 = arr3.every(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">itme</span>) </span>&#123;<br>            <span class="hljs-keyword">return</span> itme &gt; <span class="hljs-number">20</span><br>        &#125;)<br>        <span class="hljs-built_in">console</span>.log(res3);<br></code></pre></td></tr></table></figure>
+
+<h1 id="Object-keys方法获取属性名"><a href="#Object-keys方法获取属性名" class="headerlink" title="Object . keys方法获取属性名"></a><strong>Object . keys方法获取属性名</strong></h1><ol>
+<li><p>使用 Object. keys() 方法获取对象上所有的属性名</p>
+<p>返回值：所有属性名组成的数组</p>
+</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> obj = &#123;<br>            a: <span class="hljs-number">1</span>,<br>            b: <span class="hljs-number">2</span>,<br>            c: <span class="hljs-number">3</span><br>        &#125;<br><span class="hljs-keyword">var</span> str = <span class="hljs-built_in">Object</span>.keys(obj)<br><span class="hljs-built_in">console</span>.log(res);<br>res.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">item</span>) </span>&#123;<br>   <span class="hljs-built_in">console</span>.log(obj[item]);<span class="hljs-comment">//获取属性名对应的值,注意这里使用[],不能不使用.</span><br>   &#125;)<br></code></pre></td></tr></table></figure>
+
+<h1 id="Object-defineProperty-方法"><a href="#Object-defineProperty-方法" class="headerlink" title="Object. defineProperty () 方法"></a>Object. <code>defineProperty</code> () 方法</h1><p>一、Object. define Property() 方法的作用：[ V U E 响应式的核心 2 . x]</p>
+<p>​      在对象上定义一个新属性，或者修改原属性，并返回对象</p>
+<p>​    </p>
+<p>​    二、使用方法：</p>
+<p>​      Object. define Property(obj, prop, descriptor)</p>
+<p>​      (1) obj: 要定义属性的对象</p>
+<p>​      (2) prop: 要定义或修改的属性的名称, 字符串 ‘name’</p>
+<p>​      (3) descriptor: 要定义或修改的属性描述符, 数据格式是对象 {}</p>
+<p>​    三、属性的描述符</p>
+<p>​      (1) value: 属性值 </p>
+<p>​      (2) writable: 是否可以修改</p>
+<p>​      (3) enumerable: 是否可以枚举（遍历到）</p>
+<p>​      (4) configurable: 是否可以删除或再次修改特性</p>
+<p>​      三个属性描述符默认都是 false </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> obj = &#123;<br>            name: <span class="hljs-string">&#x27;张三&#x27;</span>,<br>            age: <span class="hljs-number">12</span>,<br>            sex: <span class="hljs-string">&#x27;man&#x27;</span><br>        &#125;<br>  <span class="hljs-built_in">Object</span>.defineProperty(obj, <span class="hljs-string">&#x27;height&#x27;</span>, &#123;<br>       value: <span class="hljs-string">&#x27;170&#x27;</span>,<br>       writable: <span class="hljs-literal">true</span>, <span class="hljs-comment">//true时是可以修改,false时是不可修改</span><br>       enumerable: <span class="hljs-literal">true</span>, <span class="hljs-comment">//true时是可以遍历到,false时是不可遍历到</span><br>       configurable: <span class="hljs-literal">true</span> <span class="hljs-comment">//true时是可以删除,false时是不可删除</span><br>       &#125;)<br></code></pre></td></tr></table></figure>
+
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/02/23/jquery%E6%80%BB%E7%BB%93%E4%B8%89/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile"></span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/02/23/hello-world/">
+                        <span class="hidden-mobile">Hello World</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+<!-- SCRIPTS -->
+
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      var inputArea = document.querySelector("#local-search-input");
+      inputArea.onclick = function () {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+        this.onclick = null
+      }
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+
+</body>
+</html>

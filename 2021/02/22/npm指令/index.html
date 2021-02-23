@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
-  <title>Hello World - 王佳伟</title>
+  <title>王佳伟</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
@@ -162,7 +162,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Hello World">
+            <span class="h2" id="subtitle" title="">
               
             </span>
 
@@ -172,8 +172,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-02-23 21:15" pubdate>
-        2021年2月23日 晚上
+      <time datetime="2021-02-22 11:40" pubdate>
+        2021年2月22日 中午
       </time>
     </span>
   
@@ -184,7 +184,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      75 字
+      251 字
     </span>
   
 
@@ -194,7 +194,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      3
        分钟
     </span>
   
@@ -224,22 +224,41 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Hello World</h1>
+            <h1 style="display: none"></h1>
             
             <div class="markdown-body">
-              <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+              <h2 id="npm指令"><a href="#npm指令" class="headerlink" title="npm指令"></a>npm指令</h2><p>下载一个指定的包 :npm i 包的具体名称</p>
+<p>查看一个指定包:npm view 包的具体名称</p>
+<p>下载指定版本的包:npm i 包的具体名称@版本号</p>
+<p>创建包管理配置文件:npm init -y</p>
+<p>卸载指定的包 :npm uninstall 包名称</p>
+<p>安装测试阶段用到的包:npm i -D 包名称@版本号</p>
+<p>全局包：</p>
+<p> 安装命令： npm i -g 包名称</p>
+<p>卸载命令： npm uninstall -g 包名称</p>
+<p>使用 nrm 切换源:      </p>
+<p>在任意目录下依次执行：<code>npm i -g nrm</code> ==&gt; <code>nrm ls</code> ==&gt;<code>nrm use taobao</code>(已有的就不需要下载nrm)</p>
+<p>发布包的步骤:</p>
+<ol>
+<li>编写包的说明文档 </li>
+</ol>
+<p>​      在包的根目录下添加文件 README.md 文件</p>
+<ol start="2">
+<li>注册一个 npm 账号</li>
+</ol>
+<p>​      打开注册网址: <a target="_blank" rel="noopener" href="https://www.npmjs.com/signup">https://www.npmjs.com/signup</a></p>
+<ol start="3">
+<li>pc端打开注册邮箱进行确认</li>
+</ol>
+<p>​      点击蓝色按钮 Verify Email</p>
+<ol start="4">
+<li>在包的发布目录下面执行命令</li>
+</ol>
+<p>​      <code>npm publish</code></p>
+<ol start="5">
+<li>删除已经发布的包</li>
+</ol>
+<p>​      <code>npm unpublish 包名称 --force</code></p>
 
             </div>
             <hr>
@@ -256,7 +275,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/02/23/jquery%E6%80%BB%E7%BB%93%E4%BA%8C/">
+                      <a href="/2021/02/22/npm%E4%B8%AD%E6%A8%A1%E5%9D%97%E7%9A%84%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6/">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile"></span>
                         <span class="visible-mobile">上一篇</span>
@@ -265,12 +284,6 @@
                   </article>
                   <article class="post-next col-6">
                     
-                    
-                      <a href="/2021/02/22/npm%E4%B8%AD%E6%A8%A1%E5%9D%97%E7%9A%84%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6/">
-                        <span class="hidden-mobile"></span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
                     
                   </article>
                 </div>

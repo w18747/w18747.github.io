@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
-  <title>Hello World - 王佳伟</title>
+  <title>王佳伟</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
@@ -162,7 +162,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Hello World">
+            <span class="h2" id="subtitle" title="">
               
             </span>
 
@@ -172,7 +172,7 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-02-23 21:15" pubdate>
+      <time datetime="2021-02-23 21:37" pubdate>
         2021年2月23日 晚上
       </time>
     </span>
@@ -184,7 +184,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      75 字
+      740 字
     </span>
   
 
@@ -194,7 +194,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      7
        分钟
     </span>
   
@@ -224,22 +224,47 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Hello World</h1>
+            <h1 style="display: none"></h1>
             
             <div class="markdown-body">
-              <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+              <h2 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h2><h4 id="定义"><a href="#定义" class="headerlink" title="定义:"></a>定义:</h4><p>​    用于匹配字符串中字符组合的模式，在数据类型中是属于对象</p>
+<h4 id="作用"><a href="#作用" class="headerlink" title="作用:"></a>作用:</h4><p>​    通常用来校验、查找、替换指定规则的字符文本</p>
+<ol>
+<li><p>验证表单，如：只能输入英文、字母、数字和下划线</p>
+</li>
+<li><p>过滤页面内容中的敏感词汇，或者对指定字符组合进行替换 </p>
+</li>
+<li><p>从字符串中提取我们想要的特定部分</p>
+</li>
+</ol>
+<h4 id="特点"><a href="#特点" class="headerlink" title="特点:"></a>特点:</h4><ol>
+<li><p>灵活性、逻辑性和功能性 （强大）</p>
+</li>
+<li><p>简单高效</p>
+</li>
+<li><p>可读性稍差，不便于记忆（一般复制相关的正则表达式，修改后即可使用）</p>
+</li>
+</ol>
+<h2 id="边界符"><a href="#边界符" class="headerlink" title="边界符"></a>边界符</h2><h4 id="正则表达式的组成"><a href="#正则表达式的组成" class="headerlink" title="正则表达式的组成:"></a>正则表达式的组成:</h4><p>  一个正则表达式可以由简单的字符构成，比如 /123/, 也可以是简单和特殊字符的组合，比如：<code>/^abc/</code> 其中，特殊字符又叫元字符，是在表达式中有特殊意义的字符，如 ^, $, . 等</p>
+<h4 id="边界符-1"><a href="#边界符-1" class="headerlink" title="边界符:"></a>边界符:</h4><p> 主要用来匹配字符的开始和结束位置:</p>
+<p>​      (1) ^: 用来匹配以…开头</p>
+<p>​      (2) $: 用来匹配以…结尾</p>
+<h4 id="注意"><a href="#注意" class="headerlink" title="注意:"></a>注意:</h4><p> (1) 不使用 ^ 和 $ 表示只要字符串中包含匹配的内容就返回 true, 可以多出其他任意字符</p>
+<p> (2) ^ 和 $ 在一起配合使用，表示是精确匹配, 不能多出其他字符也不能少 (必须满足数量和类型都一致)</p>
+<h2 id="字符类"><a href="#字符类" class="headerlink" title="字符类:"></a>字符类:</h2><h4 id="一、字符集合"><a href="#一、字符集合" class="headerlink" title="一、字符集合:"></a>一、字符集合:</h4><p>​      表示匹配字符集合中的任意字符，中括号中只要有任意一个字符出现在字符串就满足规则</p>
+<h4 id="二、中括号中的特殊字符自动转义"><a href="#二、中括号中的特殊字符自动转义" class="headerlink" title="二、中括号中的特殊字符自动转义:"></a>二、中括号中的特殊字符自动转义:</h4><p>用破折号（-）来指定一个字符范围，如：<code>[c-f1-3A-D]</code></p>
+<h4 id="三、反向字符集合"><a href="#三、反向字符集合" class="headerlink" title="三、反向字符集合"></a>三、反向字符集合</h4><p><code>[^xyz]</code> 表示匹配没有包含在字符集合中的字符，字符串中只要有一个不在中括号内的字符就满足规则 </p>
+<h4 id="注意-1"><a href="#注意-1" class="headerlink" title="注意:"></a>注意:</h4><p> 对于点（.）和星号（*）这样的特殊符号中括号中自动转义为原本的意义</p>
+<h4 id="正则表达式中预定义类"><a href="#正则表达式中预定义类" class="headerlink" title="正则表达式中预定义类"></a>正则表达式中预定义类</h4><p>\d：匹配 0~9 之间的任意一个数字，等价于 [0-9]</p>
+<p>\D: 匹配所有 0~9 之外的字符，等价于<code> [^0-9]</code></p>
+<p>\w: 匹配任意的字母、数字和下划线，等价于 <code>[a-zA-Z0-9_]</code></p>
+<p>\W: 匹配任意的字母、数字和下划线之外的字符，等价于 <code>[^0-9a-zA-Z_]</code></p>
+<p>\s: 匹配所有的空格（包括换行符，制表符，空格符等），等价于 [\t\r\n\v\f]</p>
+<p>\S：匹配所有的非空格符，等价于<code> [^\t\r\n\v\f]</code></p>
+<h2 id="正则表达式查找和替换"><a href="#正则表达式查找和替换" class="headerlink" title="正则表达式查找和替换"></a>正则表达式查找和替换</h2><h4 id="一、字符串中的替换"><a href="#一、字符串中的替换" class="headerlink" title="一、字符串中的替换"></a>一、字符串中的替换</h4><p>​      replace(reg, 替换后的字符) 可以替换字符串中的字符，参数可以是普通字符串，也可以是正则表达式</p>
+<h4 id="二、正则表达式参数-表达式-参数"><a href="#二、正则表达式参数-表达式-参数" class="headerlink" title="二、正则表达式参数 /表达式/参数"></a>二、正则表达式参数 /表达式/参数</h4><p>指定匹配的模式：</p>
+<p>​      （1）/表达式/g   全局匹配</p>
+<p>​      （2）/表达式/i   忽略大小写进行匹配</p>
 
             </div>
             <hr>
@@ -256,7 +281,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/02/23/jquery%E6%80%BB%E7%BB%93%E4%BA%8C/">
+                      <a href="/2021/02/23/jquery%E6%80%BB%E7%BB%93%E4%BA%94/">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile"></span>
                         <span class="visible-mobile">上一篇</span>
@@ -266,7 +291,7 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/02/22/npm%E4%B8%AD%E6%A8%A1%E5%9D%97%E7%9A%84%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6/">
+                      <a href="/2021/02/23/jquery%E6%80%BB%E7%BB%93%E4%B8%89/">
                         <span class="hidden-mobile"></span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
