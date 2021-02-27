@@ -172,8 +172,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-02-24 20:21" pubdate>
-        2021年2月24日 晚上
+      <time datetime="2021-02-27 09:26" pubdate>
+        2021年2月27日 上午
       </time>
     </span>
   
@@ -184,7 +184,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      354 字
+      1.4k 字
     </span>
   
 
@@ -194,7 +194,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      4
+      14
        分钟
     </span>
   
@@ -227,29 +227,63 @@
             <h1 style="display: none"></h1>
             
             <div class="markdown-body">
-              <h2 id="SQL语句"><a href="#SQL语句" class="headerlink" title="SQL语句"></a>SQL语句</h2><p><strong>查询表单列的数据:</strong>        *<em>select * from 表名*</em></p>
-<p><strong>向表单插入一条数据:</strong>    <strong>insert into 表名 (需要修改的列名1,需要修改的列名1) values (修改的值1,修改的值2)</strong>   <strong>(注意键值需要一一对应)</strong></p>
-<p><strong>更新表单数据:</strong>    <strong>update 表名 set  列名=’值’ where id=2 (修改id为2的数据)</strong></p>
-<p><strong>删除表单数据</strong>:        <strong>delete from 表名 where id =1 (删除id为1的数据)</strong></p>
-<p><strong>常见运算符:</strong>        </p>
-<ol>
-<li><strong><code>&gt;</code>和&gt;= (大于,大于等于)</strong></li>
-<li><strong>&lt;和&lt;=(小于,小于等于)</strong></li>
-<li><strong>!=或&lt;&gt; (不等于,推荐使用!=)</strong></li>
-<li><strong>= (等于)</strong></li>
-<li><strong>between(在什么什么之间)例:1and 10, 1和10之间</strong></li>
-<li><strong>like (像什么什么)例:%123 ,包含123的数据 ** (</strong>%表示任意字符** )</li>
+              <h1 id="对于sesstion和JWT的理解"><a href="#对于sesstion和JWT的理解" class="headerlink" title="对于sesstion和JWT的理解"></a>对于<code>sesstion</code>和JWT的理解</h1><h2 id="web开发模式"><a href="#web开发模式" class="headerlink" title="web开发模式"></a>web开发模式</h2><h4 id="一、主流的-Web-开发模式"><a href="#一、主流的-Web-开发模式" class="headerlink" title="一、主流的 Web 开发模式"></a>一、主流的 Web 开发模式</h4><ol>
+<li><p><strong>基于客户端渲染的方式</strong></p>
+</li>
+<li><p><strong>基于服务端渲染的方式</strong></p>
+</li>
 </ol>
-<p><strong>AND 和 OR 运算符</strong>:</p>
-<p>可以在 where 子句中把多个条件结合起来, <strong>and表示并且</strong>, <strong>or表示或者的意思</strong></p>
-<p><strong>升序和降序:</strong></p>
-<p><strong>默认的排序方式为升序 ASC**</strong>, 如果使用<strong>降序可以添加 DESC 关键字</strong></p>
-<p>*<em>降序:    select * from 表名 order by id desc*</em></p>
-<p><strong>升序:</strong>    *<em>select * from 表名 order by id asc*</em>(asc可以省略)</p>
-<p><strong>where语句:</strong></p>
-<p>WHERE 子句的作用:     如果需要有条件的从表中选取数据, 可以使用 WHERE 子句添加到 SQL 语句的末尾</p>
-<p><strong>例如:</strong>     *<em>select * form 表名称 where 列名称 运算符 值*</em></p>
-<p><strong>注意:</strong>    同时使用 oreder by 和 where子句时, 应该让 <strong>oreder by 位于 where 之后</strong>, 否则将会产生错误</p>
+<h4 id="二、服务端渲染概念"><a href="#二、服务端渲染概念" class="headerlink" title="二、服务端渲染概念"></a>二、服务端渲染概念</h4><p>服务端直接把数据动态拼接到 HTML 字符串中, 再把完整的 HTML 页面数据发送给客户端, 这样浏览器就可以直接渲染 页面, 不需要进行 Ajax 请求的操作了</p>
+<h4 id="三、服务端渲染的优点"><a href="#三、服务端渲染的优点" class="headerlink" title="三、服务端渲染的优点"></a>三、服务端渲染的优点</h4><ol>
+<li><p>前端渲染更快, 用户体验更好 (不需要首次等待 Ajax 发送请求的过程)</p>
+</li>
+<li><p>有利于 <code>SEO</code> 搜索引擎读取权重词汇 (服务端响应的是完整带标签的 HTML 内容, 百度等爬虫更容器读取信息)</p>
+</li>
+</ol>
+<h4 id="四、服务端渲染的缺点"><a href="#四、服务端渲染的缺点" class="headerlink" title="四、服务端渲染的缺点"></a>四、服务端渲染的缺点</h4><ol>
+<li><p>需要额外的服务器资源, 以及完善的运维体系去管理</p>
+</li>
+<li><p>不利于前后端分离, 由于页面是在服务端进行输出的, 需要前端的代码和 <code>Node.js</code> 服务端部署在一起</p>
+</li>
+</ol>
+<h2 id="前后端分离概念"><a href="#前后端分离概念" class="headerlink" title="前后端分离概念"></a>前后端分离概念</h2><h4 id="一、前后端分离的开发模式"><a href="#一、前后端分离的开发模式" class="headerlink" title="一、前后端分离的开发模式"></a>一、前后端分离的开发模式</h4><p>依赖于 Ajax 技术的广泛运用, 后端只负责提供<code>API </code>接口, 前端使用 Ajax 调用接口渲染页面的开发模式</p>
+<h4 id="二、前后端分离的优点"><a href="#二、前后端分离的优点" class="headerlink" title="二、前后端分离的优点"></a>二、前后端分离的优点</h4><p>​      (1) 开发体验好, 各司其职, 效率更高</p>
+<p>​      (2) 用户体验好, Ajax 可以在不刷新页面的情况下实现局部更新, 配合 loading 效果体验度较好</p>
+<p>​      (3) 减轻服务端的渲染压力, 因为页面最终是在每个用户的浏览器中生成的</p>
+<h4 id="三、前后端分离的缺点"><a href="#三、前后端分离的缺点" class="headerlink" title="三、前后端分离的缺点"></a>三、前后端分离的缺点</h4><p>​      (1) 前端渲染耗时长, 首屏渲染的体验度不高</p>
+<p>​      (2) 不利用 <code>SEO</code> 搜索引擎优化</p>
+<h2 id="身份验证"><a href="#身份验证" class="headerlink" title="身份验证"></a>身份验证</h2><h4 id="一、身份认证技术"><a href="#一、身份认证技术" class="headerlink" title="一、身份认证技术"></a>一、身份认证技术</h4><p>​      身份认证(Authentication) 又叫 “鉴权”, “权限验证”, “身份验证”, 是指通过一定的手段, 完成用户身份的确认</p>
+<p>​    例如: 火车票检票, 微信支付密码等生活场景,Web 开发中的邮箱验证, 短信验证码, 滑动验证码等方式</p>
+<h4 id="二、为什么需要身份认证"><a href="#二、为什么需要身份认证" class="headerlink" title="二、为什么需要身份认证"></a>二、为什么需要身份认证</h4><p>​      网站的内容如果涉及到隐私性, 安全性 和 交易性, 即需要身份认证的机制来确保安全三、不同开发模式下的身份任证</p>
+<p>​      (1) <strong>服务端渲染的推荐使用 Session 认证机制</strong></p>
+<p>​      (2) <strong>前后端分离推荐使用<code>JWT</code>认证机制</strong></p>
+<h2 id="HTTP协议的无状态性"><a href="#HTTP协议的无状态性" class="headerlink" title="HTTP协议的无状态性"></a>HTTP协议的无状态性</h2><h4 id="一、HTTP-协议的特点"><a href="#一、HTTP-协议的特点" class="headerlink" title="一、HTTP 协议的特点"></a>一、HTTP 协议的特点</h4><p>​      HTTP 本身是一个无状态的协议, 它不会记录每次发送请求的用户信息, 这会导致服务器无法识别哪个用户发送了请求</p>
+<h4 id="二、如何解决上述的问题"><a href="#二、如何解决上述的问题" class="headerlink" title="二、如何解决上述的问题"></a>二、如何解决上述的问题</h4><p>​      <strong>可以借助 cookie 和 session 两种技术来存储用户的状态</strong></p>
+<p>​    </p>
+<h2 id="cookie的技术"><a href="#cookie的技术" class="headerlink" title="cookie的技术"></a>cookie的技术</h2><h4 id="一、什么是-Cookie"><a href="#一、什么是-Cookie" class="headerlink" title="一、什么是 Cookie?"></a>一、什么是 Cookie?</h4><p>​      Cookie 是存储在用户浏览器的一段不超过 4KB 的字符串, 它是由一个名称(Name) 和 值(Value) 以及其他几个,用于控制 Cookie 有效期, 安全性, 使用范围的可选属性组成的</p>
+<h4 id="二、Cookie-的作用"><a href="#二、Cookie-的作用" class="headerlink" title="二、Cookie 的作用?"></a>二、Cookie 的作用?</h4><p>​      不用域名下的 Cookie 信息是独立的, 每当客户端发送请求时, 会自动把当前域名下所有未过期的 Cookie,添加到请求头, 一同发送到服务器</p>
+<h4 id="三、Cookie-的特性五角星⭐⭐⭐⭐⭐"><a href="#三、Cookie-的特性五角星⭐⭐⭐⭐⭐" class="headerlink" title="三、Cookie 的特性五角星⭐⭐⭐⭐⭐"></a>三、Cookie 的特性五角星⭐⭐⭐⭐⭐</h4><p>​      <strong>(1) 自动发送</strong></p>
+<p>​      <strong>(2) 域名独立</strong></p>
+<p>​      <strong>(3) 过期时限</strong></p>
+<p>​      <strong>(4) 4 KB限制</strong></p>
+<h4 id="四、Cookie-的工作机制"><a href="#四、Cookie-的工作机制" class="headerlink" title="四、Cookie 的工作机制"></a>四、Cookie 的工作机制</h4><p>​      客户端(浏览器)第一次发送请求到服务器, 服务器会以响应头的形式向浏览器写入 Cookie 保存, 之后浏览器</p>
+<p>​    每次发送请求到服务器都会自动将 Cookie 以请求头的形式发送过去</p>
+<h4 id="五、Cookie-技术的缺点"><a href="#五、Cookie-技术的缺点" class="headerlink" title="五、Cookie 技术的缺点"></a>五、Cookie 技术的缺点</h4><p>  Cookie 是存储在浏览器端的, 并且浏览器本身提供了读写 Cookie 的方法, 因此 Cookie 信息很容易被窃取和伪造,重要的隐私信息不建议存放在 Cookie 中</p>
+<h2 id="session的不足之处"><a href="#session的不足之处" class="headerlink" title="session的不足之处"></a>session的不足之处</h2><h4 id="一、Session-认证的局限性"><a href="#一、Session-认证的局限性" class="headerlink" title="一、Session 认证的局限性"></a>一、Session 认证的局限性</h4><p>​      SessionID 需要借助 cookie 手段存放在浏览器, 当涉及到前端跨域请求后端接口的时候, 需要做额外的配置才能实现 Session 的认证</p>
+<h4 id="二、如何解决上述的缺点"><a href="#二、如何解决上述的缺点" class="headerlink" title="二、如何解决上述的缺点"></a>二、如何解决上述的缺点</h4><p>​      当前端跨域请求后端接口时, 推荐使用 JWT 这种认证方式, 没有和 Cookie 的绑定关系</p>
+<h4 id="三、什么是-JWT-JSON-Web-Token"><a href="#三、什么是-JWT-JSON-Web-Token" class="headerlink" title="三、什么是 JWT (JSON Web Token)?"></a>三、什么是 JWT (JSON Web Token)?</h4><p>​      基于token的鉴权机制, 是前端目前最流行的跨域认证解决方案</p>
+<h2 id="JWT的工作机制"><a href="#JWT的工作机制" class="headerlink" title="JWT的工作机制"></a>JWT的工作机制</h2><h4 id="一、JWT-的认证机制"><a href="#一、JWT-的认证机制" class="headerlink" title="一、JWT 的认证机制"></a>一、JWT 的认证机制</h4><p>​      用户信息通过加密签名后 token 字符串的形式, 保存在客户端浏览器中. 服务器通过解密客户端传来的 token 字符串来认证用户的身份</p>
+<h5 id="二、JWT-的组成部分"><a href="#二、JWT-的组成部分" class="headerlink" title="二、JWT 的组成部分"></a>二、JWT 的组成部分</h5><p>​      通常由三部分组成, 使用英文符号.进行分隔: Header.Payload.Signature</p>
+<p>​      <strong>Header: 头部</strong></p>
+<p>​      <strong>Payload: 有效荷载, 这里存放的是经过加密后的用户信息</strong></p>
+<p>​      <strong>Signature: 签名</strong></p>
+<h4 id="三、JWT-使用方式"><a href="#三、JWT-使用方式" class="headerlink" title="三、JWT 使用方式"></a>三、JWT 使用方式</h4><p>​      服务端签发 TOKEN 到客户端后, 可以存储到 localStorage 中, 每次发送请求前都要带上这个 TOKEN, 推荐放在HTTP 请求头的 Authorization 字段中 (大事件项目中处理方式一致)</p>
+<p>​    </p>
+<h4 id="在-Node-js项目中使用-JWT"><a href="#在-Node-js项目中使用-JWT" class="headerlink" title="在 Node.js项目中使用 JWT:"></a>在 Node.js项目中使用 JWT:</h4><ol>
+<li>先安装 JWT 包</li>
+</ol>
+<p>​    <code>npm  i jsonwebtoken express-jwt</code></p>
+<p>​    说明: jsonwebtoken 用于生成 Token 字符串信息; express-jwt 用于把 Token 字符串解析为 JSON 对象</p>
 
             </div>
             <hr>
@@ -266,17 +300,11 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/02/27/%E5%AF%B9%E4%BA%8Esesstion%E7%9A%84%E7%90%86%E8%A7%A3/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile"></span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/02/23/jquery%E6%80%BB%E7%BB%93%E4%B8%80/">
+                      <a href="/2021/02/24/SQL%E8%AF%AD%E5%8F%A5/">
                         <span class="hidden-mobile"></span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
